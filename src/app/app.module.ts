@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule, FormBuilder } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppComponent } from './app.component';
 import { AddClientComponent } from './client/add-client/add-client.component';
@@ -34,6 +36,7 @@ import { ListFournisseurComponent } from './fournisseur/list-fournisseur/list-fo
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule,
     ToastrModule.forRoot()
   ],
   providers: [],
